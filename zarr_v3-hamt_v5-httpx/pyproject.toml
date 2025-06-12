@@ -4,7 +4,7 @@ dependencies = [
     "zarr>=3",
     "ipykernel>=6.29.5",
     "multiformats>=0.3.1.post4",
-    "py-hamt @ git+https://github.com/dClimate/py-hamt.git@fix/codex-async-2",
+    "py-hamt",
 ]
 name = "zarr-comparison-v3"
 version = "0.1.0"
@@ -13,3 +13,6 @@ authors = [{ name = "0xSwego - dClimate", email = "0xSwego@gmail.com" }]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = { text = "MIT" }
+
+[tool.uv.sources]
+py-hamt = { git = "https://github.com/dClimate/py-hamt.git", rev = "fix/httpx-public-gateway" }
