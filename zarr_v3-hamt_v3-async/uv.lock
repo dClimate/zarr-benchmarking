@@ -170,6 +170,27 @@ wheels = [
 ]
 
 [[package]]
+name = "click"
+version = "8.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/60/6c/8ca2efa64cf75a977a0d7fac081354553ebe483345c734fb6b6515d96bbc/click-8.2.1.tar.gz", hash = "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202", size = 286342 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/85/32/10bb5764d90a8eee674e9dc6f4db6a0ab47c8c4d0d83c27f7c39ac415a4d/click-8.2.1-py3-none-any.whl", hash = "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b", size = 102215 },
+]
+
+[[package]]
+name = "cloudpickle"
+version = "3.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/52/39/069100b84d7418bc358d81669d5748efb14b9cceacd2f9c75f550424132f/cloudpickle-3.1.1.tar.gz", hash = "sha256:b216fa8ae4019d5482a8ac3c95d8f6346115d8835911fd4aefd1a445e4242c64", size = 22113 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/e8/64c37fadfc2816a7701fa8a6ed8d87327c7d54eacfbfb6edab14a2f2be75/cloudpickle-3.1.1-py3-none-any.whl", hash = "sha256:c8c5a44295039331ee9dad40ba100a9c7297b6f988e50e87ccdf3765a668350e", size = 20992 },
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -221,6 +242,24 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/28/18/b318561a2cb51bfb80664394c507bad6bf9f77fa9e5e7b56a35cc5fe8772/dag-cbor-0.3.3.tar.gz", hash = "sha256:d8d1e7c7a022af758932e5343b7a2c9d7afa1cc64860246cae22f90cab1c9d8a", size = 54550 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/14/8e/3fa50f0e4d709610be14b8b8049f5bdd9dbeddf5147286a4c59ba55f8af0/dag_cbor-0.3.3-py3-none-any.whl", hash = "sha256:e0d1c45427ed1fa21bbd103163d4b250f4ce9066337d6ffb976da1fac3a67454", size = 25457 },
+]
+
+[[package]]
+name = "dask"
+version = "2025.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "cloudpickle" },
+    { name = "fsspec" },
+    { name = "packaging" },
+    { name = "partd" },
+    { name = "pyyaml" },
+    { name = "toolz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/29/05feb8e2531c46d763547c66b7f5deb39b53d99b3be1b4ddddbd1cec6567/dask-2025.5.1.tar.gz", hash = "sha256:979d9536549de0e463f4cab8a8c66c3a2ef55791cd740d07d9bf58fab1d1076a", size = 10969324 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/30/53b0844a7a4c6b041b111b24ca15cc9b8661a86fe1f6aaeb2d0d7f0fb1f2/dask-2025.5.1-py3-none-any.whl", hash = "sha256:3b85fdaa5f6f989dde49da6008415b1ae996985ebdfb1e40de2c997d9010371d", size = 1474226 },
 ]
 
 [[package]]
@@ -290,6 +329,24 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/39/24/1a1976563fb476ab6f0fa9fefaac7616a4361dbe0461324f9fd7bf425dbe/frozenlist-1.6.0-cp312-cp312-win32.whl", hash = "sha256:853ac025092a24bb3bf09ae87f9127de9fe6e0c345614ac92536577cf956dfcc", size = 115161 },
     { url = "https://files.pythonhosted.org/packages/80/2e/fb4ed62a65f8cd66044706b1013f0010930d8cbb0729a2219561ea075434/frozenlist-1.6.0-cp312-cp312-win_amd64.whl", hash = "sha256:2bdfe2d7e6c9281c6e55523acd6c2bf77963cb422fdc7d142fb0cb6621b66878", size = 120548 },
     { url = "https://files.pythonhosted.org/packages/71/3e/b04a0adda73bd52b390d730071c0d577073d3d26740ee1bad25c3ad0f37b/frozenlist-1.6.0-py3-none-any.whl", hash = "sha256:535eec9987adb04701266b92745d6cdcef2e77669299359c3009c3404dd5d191", size = 12404 },
+]
+
+[[package]]
+name = "fsspec"
+version = "2025.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f2/77/deb99b97981e2e191913454da82d406702405178631c31cd623caebaf1b1/fsspec-2025.5.0.tar.gz", hash = "sha256:e4f4623bb6221f7407fd695cc535d1f857a077eb247580f4ada34f5dc25fd5c8", size = 300989 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2c/a9/a7022f58e081149ec0184c31ea81dcee605e1d46380b48122e1ef94ac24e/fsspec-2025.5.0-py3-none-any.whl", hash = "sha256:0ca253eca6b5333d8a2b8bd98c7326fe821f1f0fdbd34e1b445bddde8e804c95", size = 196164 },
+]
+
+[[package]]
+name = "humanize"
+version = "4.12.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/22/d1/bbc4d251187a43f69844f7fd8941426549bbe4723e8ff0a7441796b0789f/humanize-4.12.3.tar.gz", hash = "sha256:8430be3a615106fdfceb0b2c1b41c4c98c6b0fc5cc59663a5539b111dd325fb0", size = 80514 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/1e/62a2ec3104394a2975a2629eec89276ede9dbe717092f6966fcf963e1bf0/humanize-4.12.3-py3-none-any.whl", hash = "sha256:2cbf6370af06568fa6d2da77c86edb7886f3160ecd19ee1ffef07979efc597f6", size = 128487 },
 ]
 
 [[package]]
@@ -398,6 +455,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/00/11/b56381fa6c3f4cc5d2cf54a7dbf98ad9aa0b339ef7a601d6053538b079a7/jupyter_core-5.7.2.tar.gz", hash = "sha256:aa5f8d32bbf6b431ac830496da7392035d6f61b4f54872f15c4bd2a9c3f536d9", size = 87629 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c9/fb/108ecd1fe961941959ad0ee4e12ee7b8b1477247f30b1fdfd83ceaf017f0/jupyter_core-5.7.2-py3-none-any.whl", hash = "sha256:4f7315d2f6b4bcf2e3e7cb6e46772eba760ae459cd1f59d29eb57b0a01bd7409", size = 28965 },
+]
+
+[[package]]
+name = "locket"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/83/97b29fe05cb6ae28d2dbd30b81e2e402a3eed5f460c26e9eaa5895ceacf5/locket-1.0.0.tar.gz", hash = "sha256:5c0d4c052a8bbbf750e056a8e65ccd309086f4f0f18a2eac306a8dfa4112a632", size = 4350 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/db/bc/83e112abc66cd466c6b83f99118035867cecd41802f8d044638aa78a106e/locket-1.0.0-py2.py3-none-any.whl", hash = "sha256:b6c819a722f7b6bd955b80781788e4a66a55628b858d347536b7e81325a3a5e3", size = 4398 },
 ]
 
 [[package]]
@@ -564,6 +630,9 @@ wheels = [
 crc32c = [
     { name = "crc32c" },
 ]
+pcodec = [
+    { name = "pcodec" },
+]
 
 [[package]]
 name = "numpy"
@@ -620,6 +689,37 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/66/94/68e2e17afaa9169cf6412ab0f28623903be73d1b32e208d9e8e541bb086d/parso-0.8.4.tar.gz", hash = "sha256:eb3a7b58240fb99099a345571deecc0f9540ea5f4dd2fe14c2a99d6b281ab92d", size = 400609 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/ac/dac4a63f978e4dcb3c6d3a78c4d8e0192a113d288502a1216950c41b1027/parso-0.8.4-py2.py3-none-any.whl", hash = "sha256:a418670a20291dacd2dddc80c377c5c3791378ee1e8d12bffc35420643d43f18", size = 103650 },
+]
+
+[[package]]
+name = "partd"
+version = "1.4.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "locket" },
+    { name = "toolz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b2/3a/3f06f34820a31257ddcabdfafc2672c5816be79c7e353b02c1f318daa7d4/partd-1.4.2.tar.gz", hash = "sha256:d022c33afbdc8405c226621b015e8067888173d85f7f5ecebb3cafed9a20f02c", size = 21029 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/71/e7/40fb618334dcdf7c5a316c0e7343c5cd82d3d866edc100d98e29bc945ecd/partd-1.4.2-py3-none-any.whl", hash = "sha256:978e4ac767ec4ba5b86c6eaa52e5a2a3bc748a2ca839e8cc798f1cc6ce6efb0f", size = 18905 },
+]
+
+[[package]]
+name = "pcodec"
+version = "0.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/de/30/a27c6210b3175e62bfb7f0b27d2ffac1e5f3e691f97157cc1dbfc2462ce4/pcodec-0.3.3.tar.gz", hash = "sha256:759505b08db98a28ef8964b23044cc73b137df133d5b07225a6c8ee9540286bf", size = 113115 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d3/cb/f948ba1c5dd340df807dc2e2d75ba18fc3994954e44a947df4501740f946/pcodec-0.3.3-cp312-cp312-macosx_10_12_x86_64.whl", hash = "sha256:0d41a003ca6f7dc196a8d965a6a19a0600040ecc127837b6e13609b110394d5d", size = 495711 },
+    { url = "https://files.pythonhosted.org/packages/f2/70/b19117fe198b7d7628a045a479ed6be5d6449674138419f03b505473efb7/pcodec-0.3.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b0bc1398f4d6827344b4e823804a95c40aba6b0bc904ee67bc8af809121aead8", size = 462986 },
+    { url = "https://files.pythonhosted.org/packages/a2/65/a68a75ce663247911a1a377bb19c66ced2c71d5646407de92a32e96ee746/pcodec-0.3.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a1a82d7223f64d09fa9a28da7d8ddc7b7aefab5c921846ef56ed2cc870b43f7a", size = 521776 },
+    { url = "https://files.pythonhosted.org/packages/17/df/a056664345c1b23b7ecf3e1f0a07b089a11b914e0e001a3e45a5dbcb029c/pcodec-0.3.3-cp312-cp312-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:e91e032cb1fb0f5c68637257e4fd11e2b51c850e9e21ea69c3f09647a81229cd", size = 532443 },
+    { url = "https://files.pythonhosted.org/packages/b1/c4/4e1acbe1401481de9f847837494f6d4bbcef289bc9b32aaa6ad83d8d0301/pcodec-0.3.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:684b1b272dec6581094d36df208c48eed5d525fc3151eef6f24baac17bd2995f", size = 543219 },
+    { url = "https://files.pythonhosted.org/packages/f8/b9/734a5148c879770bd9fb6f284fc72981f7f5b435c3376b200812635d1e6e/pcodec-0.3.3-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:7b88aa756a852866b8a58de9ab79f3651d7bdb1bb265bc9e4f371bbb039e8ea0", size = 575248 },
+    { url = "https://files.pythonhosted.org/packages/2e/cd/1897efa07f366d673e2c8fde934a1b235de516b3c474152f282b48000eac/pcodec-0.3.3-cp312-cp312-win_amd64.whl", hash = "sha256:0dc081f8d5b624a217bdfa8a8fbc367fb18784802d104fe635b5ca619d60e722", size = 376817 },
 ]
 
 [[package]]
@@ -891,6 +991,15 @@ wheels = [
 ]
 
 [[package]]
+name = "toolz"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/0b/d80dfa675bf592f636d1ea0b835eab4ec8df6e9415d8cfd766df54456123/toolz-1.0.0.tar.gz", hash = "sha256:2c86e3d9a04798ac556793bced838816296a2f085017664e4995cb40a1047a02", size = 66790 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/03/98/eb27cc78ad3af8e302c9d8ff4977f5026676e130d28dd7578132a457170c/toolz-1.0.0-py3-none-any.whl", hash = "sha256:292c8f1c4e7516bf9086f8850935c799a874039c8bcf959d47b600e4c44a6236", size = 56383 },
+]
+
+[[package]]
 name = "tornado"
 version = "6.5"
 source = { registry = "https://pypi.org/simple" }
@@ -1029,8 +1138,12 @@ name = "zarr-comparison-v3"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "dask" },
+    { name = "humanize" },
     { name = "ipykernel" },
     { name = "multiformats" },
+    { name = "numcodecs", extra = ["pcodec"] },
+    { name = "pcodec" },
     { name = "py-hamt" },
     { name = "xarray" },
     { name = "zarr" },
@@ -1038,8 +1151,12 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "dask", specifier = ">=2025.5.1" },
+    { name = "humanize", specifier = ">=4.12.3" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "multiformats", specifier = ">=0.3.1.post4" },
+    { name = "numcodecs", extras = ["pcodec"], specifier = ">=0.16.1" },
+    { name = "pcodec", specifier = ">=0.3.3" },
     { name = "py-hamt", git = "https://github.com/dClimate/py-hamt.git?rev=refactor-swap-requests-with-aiohttp" },
     { name = "xarray", specifier = "~=2025.3.0" },
     { name = "zarr", specifier = ">=3" },

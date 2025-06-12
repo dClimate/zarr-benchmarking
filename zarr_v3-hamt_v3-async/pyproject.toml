@@ -1,0 +1,19 @@
+[project]
+dependencies = [
+    "xarray~=2025.3.0",
+    "zarr>=3",
+    "ipykernel>=6.29.5",
+    "multiformats>=0.3.1.post4",
+    "py-hamt @ git+https://github.com/dClimate/py-hamt.git@refactor-swap-requests-with-aiohttp",
+    "numcodecs[pcodec]>=0.16.1",
+    "pcodec>=0.3.3",
+    "humanize>=4.12.3",
+    "dask>=2025.5.1",
+]
+name = "zarr-comparison-v3"
+version = "0.1.0"
+
+authors = [{ name = "0xSwego - dClimate", email = "0xSwego@gmail.com" }]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = { text = "MIT" }
