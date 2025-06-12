@@ -5,6 +5,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "multiformats>=0.3.1.post4",
     "py-hamt",
+    "humanize>=4.12.3",
 ]
 name = "zarr-comparison-v3"
 version = "0.1.0"
