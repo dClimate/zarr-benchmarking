@@ -1,19 +1,8 @@
 {
-    "folders": [
-        {
-            "path": "manual"
-        },
-        {
-            "path": "zarr_v2"
-        },
-        {
-            "path": "zarr_v3_hamt_v2"
-        },
-        {
-            "path": "zarr_v3-hamt_v3"
-        }
-    ],
     "settings": {
+        "python.venvFolders": [
+            ".venv"
+        ],
         "python.terminal.activateEnvironment": true
     }
 }

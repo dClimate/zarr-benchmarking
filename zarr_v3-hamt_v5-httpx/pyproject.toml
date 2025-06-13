@@ -1,0 +1,19 @@
+[project]
+dependencies = [
+    "xarray~=2025.3.0",
+    "zarr>=3",
+    "ipykernel>=6.29.5",
+    "multiformats>=0.3.1.post4",
+    "py-hamt",
+    "humanize>=4.12.3",
+]
+name = "zarr-comparison-v3"
+version = "0.1.0"
+
+authors = [{ name = "0xSwego - dClimate", email = "0xSwego@gmail.com" }]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.uv.sources]
+py-hamt = { git = "https://github.com/dClimate/py-hamt.git", rev = "fix/httpx-public-gateway" }
